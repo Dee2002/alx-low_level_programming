@@ -17,20 +17,20 @@ long int largest_prime_factor(long int num)
 int largest = -1;
 int i;
 
-while(num % 2 == 0)
+while  (num % 2 == 0)
 {
 largest = 2;
 num = num / 2;
 }
 for (i = 3 ; i <= sqrt(num); i = i + 2)
 {
-while(num % i == 0)
+while  (num % i == 0)
 {
 largest = i;
 num = num / i;
 }
 }
-if(num > 2)
+if  (num > 2)
 {
 largest = num;
 }
@@ -46,7 +46,7 @@ int main(void)
 {
 long int  num = 612852475143;
 
-printf ("%ld\n", largest_prime_factor(num));
+printf("%ld\n", largest_prime_factor(num));
 return (0);
 }
 
