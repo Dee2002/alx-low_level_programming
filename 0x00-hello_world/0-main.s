@@ -17,7 +17,8 @@ main:
 	mov	rbp, rsp
 	.cfi_def_cfa_register 6
 	lea	rdi, .LC0[rip]
-	call	puts@PLT
+	mov	eax, 0
+	call	printf@PLT
 	mov	eax, 0
 	pop	rbp
 	.cfi_def_cfa 7, 8
