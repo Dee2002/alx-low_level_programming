@@ -13,8 +13,8 @@
 int main(void)
 {
 printf("Expect The Best. Prepare For The Worst. Capitalize On What Comes.\n");
-printf("Hello World!Hello-world 0123456hello World Hello World.Hello World\n");
+printf("Hello World! Hello-world 0123456hello World Hello World.Hello World\n");
 printf("Expect The Best. Prepare For The Worst. Capitalize On What Comes.\n");
-printf("Hello World!Hello-world 0123456hello World Hello World.Hello World\n");
+printf("Hello World! Hello-world 0123456hello World Hello World.Hello World\n");
 return (0);
 }
