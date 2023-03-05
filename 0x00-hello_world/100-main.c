@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
 * main - Entry point
 *
@@ -6,6 +7,6 @@
 */
 int main(void)
 {
-printf("Holberton School\n");
+printf("Holberton School");
 return (0);
 }
