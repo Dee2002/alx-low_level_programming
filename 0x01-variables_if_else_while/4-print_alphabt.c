@@ -2,26 +2,18 @@
 
 /**
 * main - Entry point
-* Description: prints the alphabet in lowercase, followed by a new line
-* Prints all the letters except q and e
+*
 * Return: Always 0 (Success)
 */
-
 int main(void)
 {
-int i = 0;
-char ch = 'a';
+char c;
 
-while (i < 26)
+for (c = 'a'; c <= 'z'; c++)
 {
-if (ch != 'e' && ch != 'q')
-{
-putchar(ch);
-i++;
-}
-ch++;
+if (c != 'e' && c != 'q')
+putchar(c);
 }
 putchar('\n');
-
 return (0);
 }
