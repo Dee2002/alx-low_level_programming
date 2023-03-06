@@ -24,7 +24,6 @@ last_digit = abs(n % 10);
 printf("Last digit of %d is ", n);
 if (n < 0)
 {
-last_digit *= -1;
 printf("-%d and is ", last_digit);
 }
 else
