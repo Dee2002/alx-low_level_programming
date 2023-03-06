@@ -12,16 +12,35 @@
 
 int main(void)
 {
-putchar(48); /* print 0 */
-putchar(49); /* print 1 */
-putchar(50); /* print 2 */
-putchar(51); /* print 3 */
-putchar(52); /* print 4 */
-putchar(53); /* print 5 */
-putchar(54); /* print 6 */
-putchar(55); /* print 7 */
-putchar(56); /* print 8 */
-putchar(57); /* print 9 */
-putchar('\n'); /* print newline character */
+putchar('0');
+putchar('\n');
+
+putchar('1');
+putchar('\n');
+
+putchar('2');
+putchar('\n');
+
+putchar('3');
+putchar('\n');
+
+putchar('4');
+putchar('\n');
+
+putchar('5');
+putchar('\n');
+
+putchar('6');
+putchar('\n');
+
+putchar('7');
+putchar('\n');
+
+putchar('8');
+putchar('\n');
+
+putchar('9');
+putchar('\n');
+
 return (0);
 }
