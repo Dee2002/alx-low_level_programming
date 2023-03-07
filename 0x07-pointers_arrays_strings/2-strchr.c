@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _strchr - Locates a character in a string
+* my_strchr - Locates a character in a string
 *
 * @s: pointer to string
 * @c: character to find
@@ -24,4 +24,19 @@ if (c == '\0')
 return (s);
 
 return (NULL);
+}
+
+/**
+* main - checks the code for errors and outputs the result
+*
+* Return: Always 0
+*/
+int main(void)
+{
+char *s = "hello";
+char *f;
+
+f = my_strchr(s, 'l');
+printf("%s\n", f);
+return (0);
 }
