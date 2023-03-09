@@ -10,25 +10,18 @@
 * Return: The integer square root of n, or -1 if no integer square root exists.
 */
 
-int _sqrt_helper(int n, int low, int high)
-{
-int mid, mid_squared;
-
-if (low > high)
-return (-1);
-
-mid = (low + high) / 2;
-mid_squared = mid *mid;
-
-if (mid_squared == n)
-return (mid);
-
-if (mid_squared > n)
-return (_sqrt_helper(n, low, mid - 1));
-
-return (_sqrt_helper(n, mid + 1, high));
-}
-
+def _sqrt_recursion(n, start=0, end=None):
+if end is None:
+end = n // 2 + 1
+if start > end:
+return None
+mid = (start + end) // 2
+if mid * mid == n:
+return mid
+elif mid * mid < n:
+return _sqrt_recursion(n, mid + 1, end)
+else:
+return (_sqrt_recursion)
 /**
 * _sqrt_recursion - Computes the natural square root of a number.
 * @n: The number to compute the natural square root of.
